@@ -1,0 +1,127 @@
+doctype html
+html.no-js(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible', content='ie=edge')
+        title Asgard Green Cooperative Housing
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='apple-touch-icon', href='../apple-touch-icon.png')
+        // Place favicon.ico in the root directory
+        // CSS reset and normalize
+        link(rel='stylesheet', href='../node_modules/css-reset-and-normalize-sass/scss/flavored-reset-and-normalize.scss')
+        link(rel="stylesheet" , href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css")
+        //slick slider styles
+        link(rel="stylesheet", type="text/css", href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
+        link(rel="stylesheet", type="text/css", href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css")
+        link(rel='stylesheet', href='../css/main.css')
+        script(src='../js/vendor/modernizr-2.8.3.min.js')
+    body
+        //if lt IE 8
+          <p class="browserupgrade">You are using an<strong>outdated</strong> browser. Please<a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+
+        .container.nav
+            .logo
+                a(href="/")
+                    img(src="../img/asgard-logo.png", alt="Asgard Green three mountains logo")
+            .hamburger
+                .trigger
+                    // This checkbox will give us the toggle behavior, it will be hidden, but functional
+                    input#toggle(type='checkbox')
+                    // IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element
+                    // This label is tied to the checkbox, and it will contain the toggle "buttons"
+                    label.toggle-container(for='toggle')
+                        // If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon
+                        span.button.button-toggle
+                    // The nav menu
+                    nav.menu
+                        a.nav-item(href='/apply') How To Apply
+                        a.nav-item(href='/life-at-asgard') Co-op Life
+                        a.nav-item(href='/about') About Us
+                        a.nav-item(href='/history') History of the Co-op
+        .main
+            .container
+                .title
+                    h1
+                        span.big Asgard Green
+                        | Cooperative Housing
+            .container.sidebar
+            .container.content
+                .slideshow
+                    div
+                        img(src="http://via.placeholder.com/1024x350", alt="")
+                    div
+                        img(src="http://via.placeholder.com/1024x350", alt="")
+                    div
+                        img(src="http://via.placeholder.com/1024x350", alt="")
+
+                .content
+                    h2 Descriptive copy
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis purus eget justo commodo facilisis. Morbi nec condimentum quam. Nullam mattis placerat lacinia. Aenean lacinia arcu in libero fermentum, et congue massa blandit. Ut porta augue congue, semper odio scelerisque, faucibus augue. Cras placerat rutrum arcu, non gravida quam condimentum nec. Aliquam eget dui magna. Proin sapien metus, convallis a orci vitae, hendrerit blandit elit. Morbi euismod euismod massa, vitae cursus odio auctor ac. Etiam non cursus ligula, eget finibus elit.
+
+                    p Nunc odio ex, viverra ac iaculis eu, tincidunt ac nibh. Proin eget risus nunc. Donec egestas aliquam felis ac sodales. Cras nec ipsum eu urna dictum consectetur. Etiam iaculis augue ante, in venenatis eros efficitur a. Quisque mattis ultricies neque, id gravida nisl scelerisque id. Suspendisse tristique lorem id odio imperdiet, in ullamcorper nisl semper. Etiam vitae pellentesque ipsum, nec pharetra nisi. Ut auctor tristique ipsum, non tincidunt mi tristique id. Nam quis magna ligula. In ut ligula at ex hendrerit viverra.
+                .content
+                    h2 Frequently asked questions
+                    .faq
+                        h3 Section 1
+                        div
+                            p
+                                | Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                                | ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                                | amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                                | odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                        h3 Section 2
+                        div
+                            p
+                                | Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                | purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                                | velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                                | suscipit faucibus urna.
+                        h3 Section 3
+                        div
+                            p
+                                | Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                | Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                | ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                | lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                            ul
+                                li List item one
+                                li List item two
+                                li List item three
+                        h3 Section 4
+                        div
+                            p
+                                | Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                                | et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                                | faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                                | mauris vel est.
+                            p
+                                | Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                                | Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                | inceptos himenaeos.
+                .content.blog
+                .content.map
+                    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJEb9811r0K4gRFC4SCKqC5ZQ&key=AIzaSyAFALFtlNkNqwnRuA261T-foTp6jagtoo0" allowfullscreen></iframe>
+
+
+
+
+        .container.footer
+            p copyright 1776, captain blackbeard inc
+            p website design Britton Jenner
+
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        script.
+            window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"><\\/script>')
+        script(type="text/javascript", src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js")
+        script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script(src='../js/plugins.js')
+        script(src='../js/main.js')
+        // Google Analytics: change UA-XXXXX-X to be your site's ID.
+        script.
+            /*(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                e.src='https://www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');*/
