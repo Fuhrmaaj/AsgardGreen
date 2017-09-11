@@ -1,0 +1,21 @@
+.slides {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    background-color: rgb(211,89,34);
+}
+.slideshow {
+    @include grid-column(12);
+    padding-top: 20px;
+
+    .slick-prev {
+        left: -20px;
+    }
+    .slick-next {
+        right: -20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+

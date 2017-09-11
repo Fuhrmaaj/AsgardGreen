@@ -22,39 +22,40 @@ body {
 }
 .nav {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
+    height: 100vh;
     padding: 10px 0;
     background: url(../img/asgard_bg.jpg) center center no-repeat;
     background-size: cover;
 
     > div:not(.title) {
-        @include grid-column(6);
+        @include grid-column(12);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 100px;
     }
 }
 .title {
     @include grid-column(12);
+    margin-top: 40px;
     .big {
         display: block;
         font-size: 12.4vw;
         line-height: 12.2vw;
     }
     h1 {
+        color: #ffffff;
         font-size: 8vw;
     }
 }
 .main {
-    margin-top: 1.5em;
-}
-.slideshow {
     @include grid-column(12);
-
-    .slick-prev {
-        left: -20px;
-    }
-    .slick-next {
-        right: -20px;
-    }
 }
 .content:not(.container) {
     @include grid-column(12);
