@@ -5,12 +5,8 @@ asgard-logo.png
 .idea/watcherTasks.xml
 .idea/workspace.xml
 .sass-cache/
-css/bourbon/
 css/main.css.map
-css/main.css
-css/neat/
 css/main.css
 templates/index.html
 node_modules/
 package.json
-templates/index.html
