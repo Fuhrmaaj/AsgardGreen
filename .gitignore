@@ -7,6 +7,6 @@ asgard-logo.png
 .sass-cache/
 css/main.css.map
 css/main.css
-templates/index.html
+views/index.html
 node_modules/
 package.json
