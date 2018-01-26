@@ -1,2 +1,12 @@
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+.DS_Store
+asgard-logo.png
+.idea/watcherTasks.xml
+.idea/workspace.xml
+.sass-cache/
+css/main.css.map
+css/main.css
+views/index.html
+node_modules/
+package.json
