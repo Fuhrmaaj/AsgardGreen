@@ -6,7 +6,6 @@ asgard-logo.png
 .idea/workspace.xml
 .sass-cache/
 css/main.css.map
-css/main.css
-views/index.html
+#css/main.css
+#views/index.html
 node_modules/
-package.json

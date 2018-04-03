@@ -1,3 +1,6 @@
+%topLevelContainer {
+    padding: 20px;
+}
 html {
   box-sizing: border-box;
 }
@@ -18,20 +21,19 @@ body {
 }
 
 .container {
-    @include grid-container();
+    @extend %topLevelContainer;
 }
 .nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     height: 100vh;
-    padding: 10px 0;
     background: url(../img/asgard_bg.jpg) center center no-repeat;
     background-size: cover;
 
     > div:not(.title) {
-        @include grid-column(12);
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -42,7 +44,6 @@ body {
     }
 }
 .title {
-    @include grid-column(12);
     margin-top: 40px;
     .big {
         display: block;
@@ -54,23 +55,12 @@ body {
         font-size: 8vw;
     }
 }
-.main {
-    @include grid-column(12);
-}
 .content:not(.container) {
-    @include grid-column(12);
     margin-top: 1.5em;
 }
 .map iframe {
     max-width: 100%;
 }
-.footer {
-    padding: 1.5em 0;
-    margin-top: 1.75em;
-    color: #ffffff;
-
-    p {
-        @include grid-column(12);
-    }
+.ui-accordion-header {
+    background-image: none;
 }
-

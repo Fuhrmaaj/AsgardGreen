@@ -16,7 +16,14 @@ h6 {
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
-
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: capitalize;
+}
 p {
   margin: 0 0 $small-spacing;
 }

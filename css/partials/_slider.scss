@@ -1,11 +1,21 @@
 .slides {
-    width: calc(100% + 40px);
+    display: flex;
+    flex-direction: column;
     margin-left: -20px;
-    background-color: rgb(211,89,34);
+    overflow: hidden;
+    h2 {
+        margin-bottom: 0;
+    }
 }
 .slideshow {
-    @include grid-column(12);
+    width: 100%;
+    min-width: 800px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
     padding-top: 20px;
+    align-items: center;
 
     .slick-prev {
         left: -20px;
@@ -16,6 +26,11 @@
 
     img {
         max-width: 100%;
+    }
+    .bio {
+        max-width: 100vw;
+        margin: auto;
+        padding: 0 20px;
     }
 }
 

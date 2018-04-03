@@ -16,6 +16,7 @@ html.no-js(lang='en')
         link(rel="stylesheet", type="text/css", href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css")
         link(rel='stylesheet', href='../css/main.css')
         script(src='../js/vendor/modernizr-2.8.3.min.js')
+        link(href="https://fonts.googleapis.com/css?family=Eczar|Gentium+Basic" rel="stylesheet")
     body
         //if lt IE 8
           <p class="browserupgrade">You are using an<strong>outdated</strong> browser. Please<a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -47,31 +48,25 @@ html.no-js(lang='en')
         .main
             .container.sidebar
             .container.slides
+                h2
+                    | member spotlight
                 .slideshow
                     div
                         img(src="http://via.placeholder.com/1024x350", alt="")
+                        .bio
+                            | PERSON 1
                     div
                         img(src="http://via.placeholder.com/1024x350", alt="")
+                        .bio
+                            | PERSON 2
                     div
                         img(src="http://via.placeholder.com/1024x350", alt="")
-            .container
+                        .bio
+                            | PERSON 3
+            .container.events
                 h2
-                    | Descriptive copy
-                p
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis purus eget justo commodo
-                    | facilisis. Morbi nec condimentum quam. Nullam mattis placerat lacinia. Aenean lacinia arcu in
-                    | libero fermentum, et congue massa blandit. Ut porta augue congue, semper odio scelerisque,
-                    | faucibus augue. Cras placerat rutrum arcu, non gravida quam condimentum nec. Aliquam eget dui
-                    | magna. Proin sapien metus, convallis a orci vitae, hendrerit blandit elit. Morbi euismod euismod
-                    | massa, vitae cursus odio auctor ac. Etiam non cursus ligula, eget finibus elit.
-
-                p
-                    | Nunc odio ex, viverra ac iaculis eu, tincidunt ac nibh. Proin eget risus nunc. Donec egestas
-                    | aliquam felis ac sodales. Cras nec ipsum eu urna dictum consectetur. Etiam iaculis augue ante,
-                    | in venenatis eros efficitur a. Quisque mattis ultricies neque, id gravida nisl scelerisque id.
-                    | Suspendisse tristique lorem id odio imperdiet, in ullamcorper nisl semper. Etiam vitae
-                    | pellentesque ipsum, nec pharetra nisi. Ut auctor tristique ipsum, non tincidunt mi tristique id.
-                    | Nam quis magna ligula. In ut ligula at ex hendrerit viverra.
+                    | upcoming events
+                iframe(src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showNav=0&amp;showTabs=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=eoum41sllmp805lm6edonak1l8%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FToronto" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no")
             .container
                 h2
                     | Frequently asked questions
@@ -116,14 +111,14 @@ html.no-js(lang='en')
                             | Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
                             | Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
                             | inceptos himenaeos.
-                .container.blog
-                .container.map
-                    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJEb9811r0K4gRFC4SCKqC5ZQ&key=AIzaSyAFALFtlNkNqwnRuA261T-foTp6jagtoo0" allowfullscreen></iframe>
+                .blog
+            .container.map
+                    iframe(width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJEb9811r0K4gRFC4SCKqC5ZQ&key=AIzaSyAFALFtlNkNqwnRuA261T-foTp6jagtoo0" allowfullscreen)
 
 
 
 
-        .container.footer
+        footer.container
             p
                 | copyright 1776, captain blackbeard inc
             p
