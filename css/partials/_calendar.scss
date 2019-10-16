@@ -1,4 +1,7 @@
 .events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     iframe {
         max-width: 100%;
     }
