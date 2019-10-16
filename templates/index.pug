@@ -22,32 +22,31 @@ html.no-js(lang='en')
           <p class="browserupgrade">You are using an<strong>outdated</strong> browser. Please<a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 
         .container.nav
-            div
-                .logo
-                    a(href="/")
-                        img(src="../img/asgard_logo_transparent.png", alt="Asgard Green three mountains logo")
-                .hamburger
-                    .trigger
-                        // This checkbox will give us the toggle behavior, it will be hidden, but functional
-                        input#toggle(type='checkbox')
-                        // IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element
-                        // This label is tied to the checkbox, and it will contain the toggle "buttons"
-                        label.toggle-container(for='toggle')
-                            // If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon
-                            span.button.button-toggle
-                        // The nav menu
-                        nav.menu
-                            a.nav-item(href='/apply') How To Apply
-                            a.nav-item(href='/forms') Member Documents
-                            a.nav-item(href='/life-at-asgard') Co-op Life
-                            a.nav-item(href='/newsletter') Newsletter
-                            a.nav-item(href='/about') About Us
-                            a.nav-item(href='/resources') Resources
+            .logo
+                a(href="/")
+                    img(src="../img/asgard_logo_transparent.png", alt="Asgard Green three mountains logo")
+            .hamburger
+                .trigger
+                    // This checkbox will give us the toggle behavior, it will be hidden, but functional
+                    input#toggle(type='checkbox')
+                    // IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element
+                    // This label is tied to the checkbox, and it will contain the toggle "buttons"
+                    label.toggle-container(for='toggle')
+                        // If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon
+                        span.button.button-toggle
+                    // The nav menu
+                    nav.menu
+                        a.nav-item(href='/apply') How To Apply
+                        a.nav-item(href='/forms') Member Documents
+                        a.nav-item(href='/life-at-asgard') Co-op Life
+                        a.nav-item(href='/newsletter') Newsletter
+                        a.nav-item(href='/about') About Us
+                        a.nav-item(href='/resources') Resources
             .title
                 h1
                     span Asgard Green
                     | Cooperative Housing
-        .main
+        main
             .container.sidebar
             .container.slides
                 h2
