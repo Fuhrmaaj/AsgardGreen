@@ -45,14 +45,15 @@ body {
 }
 .title {
     margin-top: 40px;
-    .big {
-        display: block;
-        font-size: 12.4vw;
-        line-height: 12.2vw;
-    }
     h1 {
         color: #ffffff;
-        font-size: 8vw;
+        font-size: 60px;
+        span {
+            display: block;
+            margin-bottom: -10px;
+            font-size: 110px;
+            line-height: 12.2vw;
+        }
     }
 }
 .content:not(.container) {
